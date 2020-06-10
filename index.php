@@ -20,6 +20,7 @@
 </form>
 
 <?php
+date_default_timezone_set("Asia/Tokyo");
 const THREAD_FILE = 'thread.txt';
 
 if($_SERVER["REQUEST_METHOD"] === "POST"){
