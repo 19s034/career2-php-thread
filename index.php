@@ -15,6 +15,10 @@
 
 <h2>スレッド</h2>
 
+<form method="post" action="delete.php">
+    <button type="submit">投稿を全削除する</button>
+</form>
+
 <?php
 const THREAD_FILE = 'thread.txt';
 
@@ -66,7 +70,7 @@ function writeData(){
     $redirect_url = $_SERVER['HTTP_REFERER'];
     header("Location: $redirect_url");
     exit;
-    
+
 }
 
 ?>
