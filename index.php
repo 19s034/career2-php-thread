@@ -11,25 +11,27 @@
 
 <div class="container">
     <div class="col-md-8">
-        <h1 class="text-center text-info py-3">掲示板App</h1>
+        <h1 class="text-center text-warning py-3">掲示板App</h1>
         
-        <h2 class="text-muted text-secondary py-3">投稿フォーム</h2>
+        <h2 class="text-center text-warning py-3">投稿フォーム</h2>
         
         <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
-            <div class="form-group">
+            <div class="text-warning form-group">
                 <label for="name">名前</label>
                 <input type="text" class="form-control" id="name" name="personal_name" placeholder="名前" required>
             </div>
-            <div class="form-group">
+            <div class="text-warning form-group">
                 <label for="contents">内容</label>
                 <textarea class="form-control" id="contents" name="contents" rows="8" cols="40" placeholder="内容" required></textarea>
             </div>
+            <div class="text-center">
             <button class="btn btn-success" type="submit">投稿する</button>
+            </div>
         </form>
 
         <hr>
 
-        <h2 class="text-muted py-3">スレッド</h2>
+        <h2 class="text-warning py-3">スレッド</h2>
 
         <form method="post" action="delete.php">
             <button class="btn btn-danger" type="submit">投稿を全削除する</button>
