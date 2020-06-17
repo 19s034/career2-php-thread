@@ -11,9 +11,9 @@
 
 <div class="container">
     <div class="col-md-8">
-        <h1 class="text-center text-primary py-3">掲示板App</h1>
+        <h1 class="text-center text-info py-3">掲示板App</h1>
 
-        <h2 class="text-muted py-3">投稿フォーム</h2>
+        <h2 class="text-muted text-secondarypy-3">投稿フォーム</h2>
 
         <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
             <div class="form-group">
@@ -24,7 +24,7 @@
                 <label for="contents">内容</label>
                 <textarea class="form-control" id="contents" name="contents" rows="8" cols="40" placeholder="内容" required></textarea>
             </div>
-            <button class="btn btn-primary" type="submit">投稿する</button>
+            <button class="btn btn-success" type="submit">投稿する</button>
         </form>
 
         <hr>
@@ -79,8 +79,8 @@ function writeData(){
     $data = "<hr>\n";
     $data = $data."<p>投稿日時: ".date("Y/m/d H:i:s")."</p>\n";
     $data = $data."<p>投稿者: ".$personal_name."</p>\n";
-    $data = $data."<p>内容:</p>\n";
-    $data = $data."<p>".$contents."</p>\n";
+    $data = $data."<p>内容:".$contents."</p>\n";
+   
 
     $fp = fopen(THREAD_FILE, 'ab');
 
