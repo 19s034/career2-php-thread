@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
     <title>掲示板App</title>
 </head>
 <body>
@@ -12,9 +12,9 @@
 <div class="container">
     <div class="col-md-8">
         <h1 class="text-center text-info py-3">掲示板App</h1>
-
-        <h2 class="text-muted text-secondarypy-3">投稿フォーム</h2>
-
+        
+        <h2 class="text-muted text-secondary py-3">投稿フォーム</h2>
+        
         <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
             <div class="form-group">
                 <label for="name">名前</label>
