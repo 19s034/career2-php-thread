@@ -67,7 +67,8 @@ if (empty($_SESSION['token'])) {
 
         <h2 class="text-warning py-3">スレッド</h2>
 
-        <form method="post" action="delete.php">
+        <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
+            <input type="hidden" name="method" value="DELETE">
             <button class="btn btn-danger" type="submit">投稿を全削除する</button>
         </form>
 
